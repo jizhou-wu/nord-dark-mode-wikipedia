@@ -2,13 +2,14 @@
 // @name         Wikipedia Nord Dark Theme
 // @namespace    http://tampermonkey.net/
 // @version      1.0
-// @description  Applies the Nord color palette (https://www.nordtheme.com/) to Wikipedia
-// @author       wuchichou and Gemini
+// @description  Applies the Nord color palette (https://www.nordtheme.com/) to Wikipedia pages
+// @author       jizhou-wu and Gemini
 // @match        https://*.wikipedia.org/*
 // @match        https://*.wikimedia.org/*
 // @match        https://*.wiktionary.org/*
 // @grant        GM_addStyle
 // @run-at       document-start
+// @license      MIT License
 // ==/UserScript==
 
 (function() {
@@ -213,7 +214,7 @@
 
         /* --- Vector 2022 Skin Fixes (Modern Wikipedia) --- */
         .vector-header-container {
-             background-color: var(--nord1) !important;
+             background-color: var(--nord0) !important;
         }
         .vector-search-box-input {
              background-color: var(--nord2) !important;
@@ -265,5 +266,6 @@
     } else {
         addGlobalStyle(nordCss);
     }
+
 
 })();
